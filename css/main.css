@@ -1,0 +1,24 @@
+body {
+    background-color: #323232;
+}
+
+#mainTitle {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+}
+
+.content {
+    margin: 25px auto;
+    max-width: 90%;
+    border: 1px solid #fff;
+}
+
+@font-face {
+    font-family: digital;
+    src: url("../assets/fonts/DS-DIGIT.TTF");
+}
+
+#tiempo {
+    font-family: digital, serif;
+    font-size: 2.2em;
+}
