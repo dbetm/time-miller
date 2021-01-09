@@ -11,8 +11,6 @@
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <!-- JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -25,12 +23,12 @@
                 </li>
             </ul>
         </header>
-        <section class="content text-light">
+        <section class="content text-light py-2">
             <div class="col-12 text-center">
                 <h2>Solo han pasado aproximadamente</h2>
             </div>
-            <div id="tiempo" class="my-5 text-center">
-                <p>42 minutos</p>
+            <div class="time my-5 text-center">
+                <p id="time">-- minutos</p>
             </div>
             <div class="col-12 text-center">
                 <h2>en el planeta Miller desde que se estrenó la película en 2014.</h2>
@@ -39,5 +37,12 @@
 
         <!-- Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <!-- JS -->
+        <script src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js" integrity="sha256-OVk2fwTRcXYlVFxr/ECXsakqelJbOg5WCj1dXSIb+nU=" crossorigin="anonymous"></script>
+        <!-- My app -->
+        <script src="js/app.js" charset="utf-8"></script>
+        <script type="text/javascript">
+            renderTime();
+        </script>
     </body>
 </html>
