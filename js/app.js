@@ -2,27 +2,28 @@
 
 var premiere = luxon.DateTime.local(2014, 10, 26, 0, 0);
 var ratio = 69120.0;
+var music = false;
 
 var interval = setInterval(renderTime, 69120000);
 
 function renderTime() {
-    var now = luxon.DateTime.local();
+    let now = luxon.DateTime.local();
 
-    var diff = now.diff(premiere, 'seconds');
+    let diff = now.diff(premiere, 'seconds');
 
-    var earth_seconds = diff.seconds;
-    var miller_seconds = diff.seconds / ratio;
+    let earth_seconds = diff.seconds;
+    let miller_seconds = diff.seconds / ratio;
 
-    var days = parseInt(miller_seconds / 86400);
+    let days = parseInt(miller_seconds / 86400);
     miller_seconds = miller_seconds % 86400;
-    var hours = parseInt(miller_seconds / 3600);
+    let hours = parseInt(miller_seconds / 3600);
     miller_seconds = miller_seconds % 3600;
-    var minutes = parseInt(miller_seconds / 60);
-    var seconds = parseInt(miller_seconds % 60);
+    let minutes = parseInt(miller_seconds / 60);
+    let seconds = parseInt(miller_seconds % 60);
 
     console.log(days, hours, minutes, seconds);
 
-    var time_str = "";
+    let time_str = "";
 
     if(days != 0) {
       time_str += days + " día";
@@ -42,4 +43,14 @@ function renderTime() {
     }
 
     document.getElementById("time").innerHTML = time_str;
+}
+
+function playSoundtrack() {
+    if(music) music = false;
+    else music = true;
+
+    let soundtrack = document.getElementById('soundtrack');
+
+    if(music) soundtrack.muted = false;
+    else soundtrack.muted = true;
 }
