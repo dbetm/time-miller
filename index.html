@@ -34,13 +34,16 @@
                 <h2>en el planeta Miller desde que se estrenó la película en 2014.</h2>
             </div>
         </section>
-        <section class="content py-2 text-center">
+        <section class="py-2 text-center">
             <input class="btn btn-primary" type="button" value="Generar imagen para compartir">
         </section>
         <section class="content text-light py-2 px-2 text-center">
             <div id="phrase">
-                <p class="lead"><em>-Podrías tener que decidir entre ver de nuevo a tus hijos y el futuro de la raza humana. -Doctor Brand.
-                </em></p>
+                <p class="lead" id="phrase">
+                    <em><span id="bodyPhrase"></span></em>
+                    <hr>
+                    <span id="authorPhrase"></span>
+                </p>
             </div>
         </section>
 
@@ -64,8 +67,10 @@
         <script src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js" integrity="sha256-OVk2fwTRcXYlVFxr/ECXsakqelJbOg5WCj1dXSIb+nU=" crossorigin="anonymous"></script>
         <!-- My app -->
         <script src="js/app.js" charset="utf-8"></script>
+        <script src="assets/phrases.json" charset="utf-8"></script>
         <script type="text/javascript">
             renderTime();
+            renderRandomPhrase();
         </script>
     </body>
 </html>

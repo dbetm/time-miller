@@ -54,3 +54,10 @@ function playSoundtrack() {
     if(music) soundtrack.muted = false;
     else soundtrack.muted = true;
 }
+
+function renderRandomPhrase() {
+    let randomIndex = Math.floor(Math.random() * data.length);
+
+    document.getElementById('bodyPhrase').innerHTML = data[randomIndex].body;
+    document.getElementById('authorPhrase').innerHTML = data[randomIndex].author;
+}
