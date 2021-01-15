@@ -23,3 +23,7 @@ body {
     font-family: digital, serif;
     font-size: 2.1em;
 }
+
+footer {
+    margin: auto auto;
+}
