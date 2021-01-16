@@ -1,0 +1,42 @@
+data = [
+    {
+        "author": "Doctora Brand",
+        "body": "Podrías tener que decidir entre ver de nuevo a tus hijos y el futuro de la raza humana."
+    },
+    {
+        "author": "TARS",
+        "body": "Verás que el tiempo aquí está representado como una dimensión física. Te has dado cuenta que puedes ejercer una fuerza a través del tejido espacio-tiempo."
+    },
+    {
+        "author": "Doctora Brand",
+        "body": "El amor es la única cosa que trasciende el tiempo y espacio. Tal vez debamos de confiar en eso, incluso si no podemos entenderlo"
+    },
+    {
+        "author": "Cooper",
+        "body": "Bien, ¡esta pequeña maniobra nos va a costar 51 años!"
+    },
+    {
+        "author": "Cooper",
+        "body": "Nuestros más grandes logros no pueden estar antes de nosotros, porque nuestro destino yace sobre nosotros."
+    },
+    {
+        "author": "Doyle",
+        "body": "Mundos potencialmente habitables dentro de nuestro alcance."
+    },
+    {
+        "author": "Doctora Brand",
+        "body": "El tiempo es relativo, ¿de acuerdo? Se puede alargar y compactar, pero no puede ir hacia atrás. Simplemente no puede. La única cosa que se puede mover a través de las dimensiones, como el tiempo, es la gravedad."
+    },
+    {
+        "author": "Cooper",
+        "body": "La Ley de Murphy no significa que algo malo sucederá. Significa que lo que sea que puede ocurrir, ocurrirá. Y eso sonó justamente bien para nosotros."
+    },
+    {
+        "author": "Cooper",
+        "body": "Solíamos ver el cielo y nos preguntábamos cual era nuestro lugar en las estrellas, ahora solo miramos hacia abajo y nos preocupamos de nuestro lugar en la tierra."
+    },
+    {
+        "author": "Doctora Brand",
+        "body": "Escucha cuando te digo que el amor no es algo que hayamos inventado. Es observable, es poderoso. Tiene que significar algo."
+    }
+]

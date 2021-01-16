@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Planeta Miller</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <!--CSS -->
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a id='mainTitle' class="nav-link active" aria-current="page" href="#" onclick="playSoundtrack();">⏰ INTERESTELAR</a>
+                    <div class="spinner-grow text-light" role="status">
+                        <span class="visually-hidden"></span>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <section class="content text-light py-2 rounded">
+            <div class="col-12 text-center">
+                <h2>Solo han pasado aproximadamente</h2>
+            </div>
+            <div class="time my-5 text-center">
+                <p id="time">-- minutos</p>
+            </div>
+            <div class="col-12 text-center">
+                <h2>en el planeta Miller desde que se estrenó la película en 2014.</h2>
+            </div>
+        </section>
+        <section id="btnSnapshot" class="py-2 text-center">
+            <input class="btn btn-primary" onclick="takeSnapshot();" type="button" value="Generar imagen para compartir">
+        </section>
+        <section class="content text-light py-2 px-2 text-center">
+            <div class="phrase">
+                <p class="lead font-italic" id="phrase"></p>
+                <hr>
+                <p class="lead font-italic" id="author"></p>
+            </div>
+        </section>
+
+        <a href="#" id="imageDownloader" hidden></a>
+
+        <div id='credits' class="content text-light text-center mt-5" hidden>
+            <p>+) @dbetm | www.facebook.com/spacexy</p>
+        </div>
+
+        <footer id="footer" class="container-fluid py-2 bg-light text-center">
+            <p>
+                +) <a href="https://twitter.com/dabetm" target="_blank">@dbetm</a> |
+                <a href="https://www.facebook.com/spacexy" target="_blank">SpaceW</a>
+            </p>
+            <p>Proyecto sin fines de lucro</p>
+            <p>
+                <a href="https://soundcloud.com/musicmike512/interstellar-hans-zimmer-main-themefirst-step-piano-cover" target="_blank">Música de fondo - First step</a>
+            </p>
+        </footer>
+
+        <audio id="soundtrack">
+            <source src="assets/audios/FirstStep.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <!-- JS -->
+        <script src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js" integrity="sha256-OVk2fwTRcXYlVFxr/ECXsakqelJbOg5WCj1dXSIb+nU=" crossorigin="anonymous"></script>
+
+        <script src="libs/html2canvas.min.js" charset="utf-8"></script>
+        <!-- My app -->
+        <script src="js/app.js" charset="utf-8"></script>
+        <script src="assets/phrases.json" charset="utf-8"></script>
+        <script type="text/javascript">
+            renderTime();
+            renderRandomPhrase();
+        </script>
+    </body>
+</html>

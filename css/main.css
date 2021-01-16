@@ -1,0 +1,52 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+body {
+    background-color: #323232;
+    background-image: url('../assets/images/gargantua.jpg');
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background-image: url('../assets/images/gargantua_mobile.jpg');
+    }
+}
+
+#mainTitle {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+}
+
+.content {
+    margin: 20px auto;
+    max-width: 90%;
+    background-color: rgba(46, 46, 46, 0.69);
+}
+
+@font-face {
+    font-family: digital;
+    src: url("../assets/fonts/DS-DIGIT.TTF");
+}
+
+.time {
+    font-family: digital, serif;
+    font-size: 2.1em;
+}
+
+.lead {
+    font-size: 1em;
+    font-style: italic;
+}
+
+footer {
+    margin: auto auto;
+    display: table-row;
+}
+
+footer p {
+    margin-top: 15px;
+}
