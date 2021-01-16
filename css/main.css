@@ -1,5 +1,19 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
 body {
     background-color: #323232;
+    background-image: url('../assets/images/gargantua.jpg');
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background-image: url('../assets/images/gargantua_mobile.jpg');
+    }
 }
 
 #mainTitle {
@@ -8,9 +22,8 @@ body {
 }
 
 .content {
-    margin: 25px auto;
+    margin: 20px auto;
     max-width: 90%;
-    /* border: 1px solid #fff; */
     background-color: rgba(46, 46, 46, 0.69);
 }
 
@@ -26,4 +39,9 @@ body {
 
 footer {
     margin: auto auto;
+    display: table-row;
+}
+
+footer p {
+    margin-top: 15px;
 }
