@@ -61,3 +61,37 @@ function renderRandomPhrase() {
     document.getElementById('bodyPhrase').innerHTML = data[randomIndex].body;
     document.getElementById('authorPhrase').innerHTML = data[randomIndex].author;
 }
+
+function takeSnapshot() {
+    let downloader = document.getElementById('imageDownloader');
+    downloader.setAttribute('download', 'miller_time.png');
+
+    tmpWidth = document.body.style.width;
+    tmpHeight = document.body.style.height;
+
+    document.body.style.width = '600px';
+    document.body.style.height = '750px';
+    document.getElementById('credits').hidden = false;
+
+    html2canvas(document.body, {
+        width: 600,
+        height: 750,
+        ignoreElements: function(element) {
+            if('btnSnapshot' == element.id ) {
+                return true;
+            }
+
+            if('footer' == element.id) {
+                return true;
+            }
+        }
+    }).then(function(canvas) {
+        document.body.style.width = tmpWidth;
+        document.body.style.height = tmpHeight;
+        document.getElementById('credits').hidden = true;
+
+        let image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+        downloader.setAttribute('href', image);
+        downloader.click();
+    });
+}

@@ -26,7 +26,7 @@
                 </li>
             </ul>
         </header>
-        <section class="content text-light py-2">
+        <section class="content text-light py-2 rounded">
             <div class="col-12 text-center">
                 <h2>Solo han pasado aproximadamente</h2>
             </div>
@@ -37,11 +37,11 @@
                 <h2>en el planeta Miller desde que se estrenó la película en 2014.</h2>
             </div>
         </section>
-        <section class="py-2 text-center">
-            <input class="btn btn-primary" type="button" value="Generar imagen para compartir">
+        <section id="btnSnapshot" class="py-2 text-center">
+            <input class="btn btn-primary" onclick="takeSnapshot();" type="button" value="Generar imagen para compartir">
         </section>
         <section class="content text-light py-2 px-2 text-center">
-            <div id="phrase">
+            <div class="phrase">
                 <p class="lead" id="phrase">
                     <em><span id="bodyPhrase"></span></em>
                     <hr>
@@ -53,10 +53,16 @@
         <audio id="soundtrack" src="assets/audios/First Step.mp3" autoloop autoplay muted='false'>
         </audio>
 
-        <footer class="container-fluid py-2 bg-light text-center">
+        <a href="#" id="imageDownloader" hidden></a>
+
+        <div id='credits' class="content text-light text-center mt-5" hidden>
+            <p>+) @dbetm | www.facebook.com/spacexy</p>
+        </div>
+
+        <footer id="footer" class="container-fluid py-2 bg-light text-center">
             <p>
-                Por <a href="https://twitter.com/dabetm" target="_blank">@dbetm</a> |
-                <a href="https://www.facebook.com/spacexy" target="_blank">SpaceW</a> +)
+                +) <a href="https://twitter.com/dabetm" target="_blank">@dbetm</a> |
+                <a href="https://www.facebook.com/spacexy" target="_blank">SpaceW</a>
             </p>
             <p>Proyecto sin fines de lucro</p>
             <p>
@@ -68,6 +74,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
         <!-- JS -->
         <script src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js" integrity="sha256-OVk2fwTRcXYlVFxr/ECXsakqelJbOg5WCj1dXSIb+nU=" crossorigin="anonymous"></script>
+
+        <script src="libs/html2canvas.min.js" charset="utf-8"></script>
         <!-- My app -->
         <script src="js/app.js" charset="utf-8"></script>
         <script src="assets/phrases.json" charset="utf-8"></script>
