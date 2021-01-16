@@ -2,7 +2,7 @@
 
 var premiere = luxon.DateTime.local(2014, 10, 26, 0, 0);
 var ratio = 69120.0;
-var music = false;
+var music = true;
 
 var interval = setInterval(renderTime, 69120000);
 
@@ -51,15 +51,15 @@ function playSoundtrack() {
 
     let soundtrack = document.getElementById('soundtrack');
 
-    if(music) soundtrack.muted = false;
-    else soundtrack.muted = true;
+    if(music) soundtrack.play();
+    else soundtrack.pause();
 }
 
 function renderRandomPhrase() {
     let randomIndex = Math.floor(Math.random() * data.length);
 
-    document.getElementById('bodyPhrase').innerHTML = data[randomIndex].body;
-    document.getElementById('authorPhrase').innerHTML = data[randomIndex].author;
+    document.getElementById('phrase').innerHTML = data[randomIndex].body;
+    document.getElementById('author').innerHTML = data[randomIndex].author;
 }
 
 function takeSnapshot() {

@@ -19,7 +19,7 @@
         <header>
             <ul class="nav nav-pills nav-fill">
                 <li class="nav-item">
-                    <a id='mainTitle' class="nav-link active" aria-current="page" href="#" onclick="playSoundtrack();">INTERESTELAR</a>
+                    <a id='mainTitle' class="nav-link active" aria-current="page" href="#" onclick="playSoundtrack();">⏰ INTERESTELAR</a>
                     <div class="spinner-grow text-light" role="status">
                         <span class="visually-hidden"></span>
                     </div>
@@ -42,16 +42,11 @@
         </section>
         <section class="content text-light py-2 px-2 text-center">
             <div class="phrase">
-                <p class="lead" id="phrase">
-                    <em><span id="bodyPhrase"></span></em>
-                    <hr>
-                    <span id="authorPhrase"></span>
-                </p>
+                <p class="lead font-italic" id="phrase"></p>
+                <hr>
+                <p class="lead font-italic" id="author"></p>
             </div>
         </section>
-
-        <audio id="soundtrack" src="assets/audios/First Step.mp3" autoloop autoplay muted='false'>
-        </audio>
 
         <a href="#" id="imageDownloader" hidden></a>
 
@@ -69,6 +64,11 @@
                 <a href="https://soundcloud.com/musicmike512/interstellar-hans-zimmer-main-themefirst-step-piano-cover" target="_blank">Música de fondo - First step</a>
             </p>
         </footer>
+
+        <audio id="soundtrack">
+            <source src="assets/audios/FirstStep.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
 
         <!-- Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
