@@ -2,7 +2,7 @@
 
 var premiere = luxon.DateTime.local(2014, 10, 26, 0, 0);
 var ratio = 69120.0;
-var music = true;
+var music = false;
 
 var interval = setInterval(renderTime, 69120000);
 
