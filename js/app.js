@@ -64,7 +64,9 @@ function renderRandomPhrase() {
 
 function takeSnapshot() {
     let downloader = document.getElementById('imageDownloader');
-    downloader.setAttribute('download', 'miller_time.png');
+    const d = new Date().toLocaleDateString()
+    let filename = d + "_miller_time.png"
+    downloader.setAttribute('download', filename);
 
     tmpWidth = document.body.style.width;
     tmpHeight = document.body.style.height;
