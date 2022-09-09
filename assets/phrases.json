@@ -38,5 +38,21 @@ data = [
     {
         "author": "Doctora Brand",
         "body": "Escucha cuando te digo que el amor no es algo que hayamos inventado. Es observable, es poderoso. Tiene que significar algo."
+    },
+    {
+        "author": "Profesor Brand",
+        "body": "Debemos llegar mucho más allá de nuestra propia esperanza de vida. Debemos pensar no como individuos sino como especie. Debemos enfrentar la realidad de los viajes interestelares."
+    },
+    {
+        "author": "Murph",
+        "body": "Elaboré el mensaje. Una palabra. ¿Sabes qué es? STAY. Dice quédate, papá."
+    },
+    {
+        "author": "Cooper",
+        "body": "Gravedad. Para enviar un mensaje. La gravedad puede cruzar dimensiones, incluido el tiempo."
+    },
+    {
+        "author": "Cooper",
+        "body": "Sé qué es el código morse Murph, solamente que no pienso que tu librero esté tratando de hablarte."
     }
 ]

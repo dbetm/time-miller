@@ -24,7 +24,7 @@ body {
 .content {
     margin: 20px auto;
     max-width: 90%;
-    background-color: rgba(46, 46, 46, 0.69);
+    background-color: rgba(46, 46, 46, 0.58);
 }
 
 @font-face {
