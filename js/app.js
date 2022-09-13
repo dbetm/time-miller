@@ -20,7 +20,8 @@ function renderTime() {
     miller_seconds = miller_seconds % 3600;
     let minutes = parseInt(miller_seconds / 60);
     let seconds = parseInt(miller_seconds % 60);
-
+    
+    console.log(miller_seconds / 60)
     console.log(days, hours, minutes, seconds);
 
     let time_str = "";
