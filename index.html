@@ -28,18 +28,18 @@
         </header>
         <section class="content text-light py-2 rounded">
             <div class="col-12 text-center">
-                <h2>Han pasado aproximadamente</h2>
+                <h2 id="preTextTime">Han pasado aproximadamente</h2>
             </div>
             <div class="time my-3 text-center">
                 <p id="time">-- minutos</p>
             </div>
             <div class="col-12 text-center">
-                <h2>en el planeta Miller desde el estreno de la película en 2014</h2>
+                <h2 id="afterTextTime">en el planeta Miller desde el estreno de la película en 2014</h2>
             </div>
         </section>
         <section id="btnSnapshot" class="py-2 text-center">
-            <input class="btn btn-dark" onclick="takeSnapshot();" type="button" value="Generar captura">
-            <input class="btn btn-dark px-3" onclick="playSoundtrack();" type="button" value="Música">
+            <input id="btnGenSnapshot" class="btn btn-dark" onclick="takeSnapshot();" type="button" value="Generar captura">
+            <input id="btnPlayMusic" class="btn btn-dark px-3" onclick="playSoundtrack();" type="button" value="Música">
         </section>
         <section class="content text-light py-2 px-2 text-center">
             <div class="phrase">
@@ -56,12 +56,15 @@
         </div>
 
         <footer id="footer" class="container-fluid py-2 bg-light text-center">
-            <p>Toca el reloj para reproducir música</p>
+            <div id="langSelector" class="form-check form-switch d-flex justify-content-center my-2">
+                <input id="switchLang" class="form-check-input px-3" type="checkbox" role="switch" onchange="switchLang();">
+                <label id="lblSwitchLang" class="form-check-label px-3" for="switchLang">Español / Spanish</label>
+            </div>
             <p>
-                <a href="https://soundcloud.com/musicmike512/interstellar-hans-zimmer-main-themefirst-step-piano-cover" target="_blank">Música de fondo - First step</a>
+                <a id="refMusic" href="https://soundcloud.com/musicmike512/interstellar-hans-zimmer-main-themefirst-step-piano-cover" target="_blank">Música de fondo - First step</a>
             </p>
             <p>
-                Contribuye en <a href="https://github.com/dbetm/time-miller" target="_blank">GitHub</a> +)
+                <a id="refContribute" href="https://github.com/dbetm/time-miller" target="_blank">Contribuye en GitHub +)</a>
             </p>
         </footer>
 
@@ -78,8 +81,10 @@
         <script src="libs/html2canvas.min.js" charset="utf-8"></script>
         <!-- My app -->
         <script src="js/app.js" charset="utf-8"></script>
-        <script src="assets/phrases.json" charset="utf-8"></script>
+        <script src="js/translation.js" charset="utf-8"></script>
+        <script src="assets/quotes.json" charset="utf-8"></script>
         <script type="text/javascript">
+            renderTextTranslated();
             renderTime();
             renderRandomPhrase();
         </script>
