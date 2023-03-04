@@ -50,3 +50,11 @@ footer {
 footer p {
     margin-top: 15px;
 }
+
+#switchLang {
+    transform: scale(1.5);
+}
+
+#lblSwitchLang {
+    font-size: 1.1em
+}

@@ -24,26 +24,27 @@ function renderTime() {
     // console.log(miller_seconds / 60)
     // console.log(days, hours, minutes, seconds);
 
-    let time_str = "";
+    let timeStr = "";
+    let timeUnits = translations[language]["time"]["units"];
 
     if(days != 0) {
-      time_str += days + " día";
-      if(days != 1) time_str += "s";
+        timeStr += days + " " + timeUnits["day"];
+        if(days != 1) timeStr += "s";
     }
     if(hours != 0) {
-      time_str += " " + hours + " hora";
-      if(hours != 1) time_str += "s";
+        timeStr += " " + hours + " " + timeUnits["hour"];
+        if(hours != 1) timeStr += "s";
     }
     if(minutes != 0) {
-      time_str += " " + minutes + " minuto";
-      if(minutes != 1) time_str += "s";
+        timeStr += " " + minutes + " " + timeUnits["minute"];
+        if(minutes != 1) timeStr += "s";
     }
     if(seconds != 0) {
-      time_str += " " + seconds + " segundo";
-      if(seconds != 1) time_str += "s";
+        timeStr += " " + seconds + " " + timeUnits["second"];
+        if(seconds != 1) timeStr += "s";
     }
 
-    document.getElementById("time").innerHTML = time_str;
+    document.getElementById("time").innerHTML = timeStr;
 }
 
 function playSoundtrack() {
@@ -57,10 +58,10 @@ function playSoundtrack() {
 }
 
 function renderRandomPhrase() {
-    let randomIndex = Math.floor(Math.random() * data.length);
+    let randomIndex = Math.floor(Math.random() * quotes[language].length);
 
-    document.getElementById('phrase').innerHTML = data[randomIndex].body;
-    document.getElementById('author').innerHTML = data[randomIndex].author;
+    document.getElementById('phrase').innerHTML = quotes[language][randomIndex].body;
+    document.getElementById('author').innerHTML = quotes[language][randomIndex].author;
 }
 
 function takeSnapshot() {
@@ -78,7 +79,7 @@ function takeSnapshot() {
 
     html2canvas(document.body, {
         width: 600,
-        height: 750,
+        height: 740,
         ignoreElements: function(element) {
             if('btnSnapshot' == element.id ) {
                 return true;

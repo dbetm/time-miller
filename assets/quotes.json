@@ -1,0 +1,102 @@
+quotes = {
+    "es": [
+        {
+            "author": "Doctora Brand",
+            "body": "Podrías tener que decidir entre ver de nuevo a tus hijos y el futuro de la raza humana."
+        },
+        {
+            "author": "TARS",
+            "body": "Verás que el tiempo aquí está representado como una dimensión física. Te has dado cuenta que puedes ejercer una fuerza a través del tejido espacio-tiempo."
+        },
+        {
+            "author": "Doctora Brand",
+            "body": "El amor es la única cosa que trasciende el tiempo y espacio. Tal vez debamos de confiar en eso, incluso si no podemos entenderlo."
+        },
+        {
+            "author": "Cooper",
+            "body": "Bien, ¡esta pequeña maniobra nos va a costar 51 años!"
+        },
+        {
+            "author": "Cooper",
+            "body": "Nuestros más grandes logros no pueden estar antes de nosotros, porque nuestro destino yace sobre nosotros."
+        },
+        {
+            "author": "Doyle",
+            "body": "Mundos potencialmente habitables dentro de nuestro alcance."
+        },
+        {
+            "author": "Doctora Brand",
+            "body": "El tiempo es relativo, ¿de acuerdo? Se puede alargar y compactar, pero no puede ir hacia atrás. Simplemente no puede. La única cosa que se puede mover a través de las dimensiones, como el tiempo, es la gravedad."
+        },
+        {
+            "author": "Cooper",
+            "body": "La Ley de Murphy no significa que algo malo sucederá. Significa que lo que sea que puede ocurrir, ocurrirá. Y eso sonó justamente bien para nosotros."
+        },
+        {
+            "author": "Cooper",
+            "body": "Solíamos ver el cielo y nos preguntábamos cual era nuestro lugar en las estrellas, ahora solo miramos hacia abajo y nos preocupamos de nuestro lugar en la Tierra."
+        },
+        {
+            "author": "Doctora Brand",
+            "body": "Escucha cuando te digo que el amor no es algo que hayamos inventado. Es observable, es poderoso. Tiene que significar algo."
+        },
+        {
+            "author": "Profesor Brand",
+            "body": "Debemos llegar mucho más allá de nuestra propia esperanza de vida. Debemos pensar no como individuos sino como especie. Debemos enfrentar la realidad de los viajes interestelares."
+        },
+        {
+            "author": "Murph",
+            "body": "Elaboré el mensaje. Una palabra. ¿Sabes qué es? STAY. Dice quédate, papá."
+        },
+        {
+            "author": "Cooper",
+            "body": "Gravedad. Para enviar un mensaje. La gravedad puede cruzar dimensiones, incluido el tiempo."
+        },
+        {
+            "author": "Cooper",
+            "body": "Sé qué es el código morse Murph, solamente que no pienso que tu librero esté tratando de hablarte."
+        },
+        {
+            "author": "Cooper",
+            "body": "Siempre nos hemos caracterizado por nuestra habilidad de superar lo imposible...esos momentos en los que nos atrevemos a ir más alto, romper barreras, alcanzar las estrellas y hacer lo desconocido conocido."
+        }
+    ],
+    "en": [
+        {
+            "author": "Cooper",
+            "body": "After you kids came along, your mom, she said something to me I never quite understood. She said, 'Now, we're just here to be memories for our kids'. I think now I understand what she meant. Once you're a parent, you're the ghost of your children's future."
+        },
+        {
+            "author": "Dr. Amelia Brand",
+            "body": "Love is the one thing that transcends time and space. Maybe we should trust that, even if we cannot understand it."
+        },
+        {
+            "author": "Cooper",
+            "body": "We've always defined ourselves by the ability to overcome the impossible. And we count these moments. These moments when we dare to aim higher, to break barriers, to reach for the stars, to make the unknown known. We count these moments as our proudest achievements... And that our greatest accomplishments cannot be behind us, because our destiny lies above us."
+        },
+        {   
+            "author": "Dr. Amelia Brand",
+            "body": "Accident is the first building block of evolution."
+        },
+        {
+            "author": "Cooper",
+            "body": "We used to look up at the sky and wonder at our place in the stars, now we just look down and worry about our place in the dirt."
+        },
+        {
+            "author": "Cooper",
+            "body": "Murphy’s Law doesn’t mean that something bad will happen. It means that whatever can happen will happen."
+        },
+        {
+            "author": "Murph",
+            "body": "Today is my birthday. And it’s a special one because you once told me that when you came back, we might be the same age. Well, now I’m the same age that you were when you left…and it’d be really great if you come back soon."
+        },
+        {
+            "author": "Cooper",
+            "body": "We count these moments. These moments when we dare to aim higher, to break barriers, to reach for the stars, to make the unknown known. We count these moments as our proudest achievements."
+        },
+        {
+            "author": "Professor Brand",
+            "body": "I’m not afraid of death. I’m an old physicist. I’m afraid of time."
+        }
+    ]
+}
