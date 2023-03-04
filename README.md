@@ -1,28 +1,36 @@
-# Time Miller
-Una app web para saber cúanto tiempo ha pasado en el planeta Miller (o Planeta de Miller) desde el estreno de la película Interstellar.
+# Miller's time
+A web app to know how much time has happened in the Miller's planet since the Interstellar movie was premiered.
 
-El tiempo transcurre más lento (respecto a la Tierra) en aquel planeta ficticio debido a los efectos de la gravedad por un agujero negro supermasivo llamado Gargantúa.
+The time happens more slowly (compared to the Earth) in the fictional planet because the gravity effects by a supermassive black hole called Gargantua.
 
-**Funcionalidades**
-- Calcular y mostrar el tiempo que ha pasado en Miller desde el estreno de la película (en la Tierra) en días, horas, minutos y segundos.
-- Descargar imagen como captura con frase random de la película.
-- Tocar reloj para escuchar el tema música principal de la película.
+[Leer en español / Read in Spanish](README.es.md)
 
-
-### ¿Cómo funciona?
-
-Se toma el hecho de que cada tic-tac que ocurre cada 1.25 segundos en la música de fondo en las escenas del planeta Océano "Miller" equivalen a 1 un día completo (24 horas) en el Planeta Tierra 🌎.
-
-Se toma el hecho de que la película se estrenó el 26 de octubre del 2014 a las 00:00, tiempo relativo a cualquier zona horaria.
+**Features**
+- Compute and display the time that has happened in Miller's planet since the premiered (in Earth) of the movie in days, minutes and seconds.
+- Generate screenshot with a random quote from the movie.
+- Play the main soundtrack of the movie.
+- Content displayed in English (default) and Spanish.
 
 
-**Ejemplo**
+### How does it work?
 
-Si hoy es _sábado 20 de agosto del 2022_ en la Tierra, entonces aquí han pasado 2,855 días, o sea, 2855 tic-tacs en el Planeta Miller que son 2855*1.25 segundos => 3568.75 segundos => 59 minutos y 29 segundos.
+The fact is taken that each tic-tac that occurs every 1.25 seconds in the background music in the scenes of the planet Ocean "Miller" is equivalent to one full day (24 hours) on Planet Earth 🌎.
+
+It is taken as a fact that the movie was released on October 26th, 2014 at 00:00, relative to any time zone.
 
 
-![](assets/images/ss_example.png)
- 
+**Example**
+
+If today is _Saturday, March 4th, 2023_ on Earth, then 3,051 days have passed here, which means 3,051 tick-tocks on Planet Miller, which are 3,051*1.25 seconds => 3,813.75 seconds => **1 hour, 3 minutes and 34 seconds**.
+
+
+![](assets/images/ss_example_en.png)
+
+---------
+
+### Contribute
+
+Feel free to open a Pull Request with enhancements.
 
 
 
