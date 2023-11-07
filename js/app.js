@@ -1,6 +1,13 @@
-// 1.25 seconds in Miller's planet is equivalent to 1 day in Earth
-
 var premiere = luxon.DateTime.local(2014, 10, 26, 0, 0);
+/* 1.25 seconds in Miller is equal to 1 day in Earth, because for each tic-tac that happens 
+in the soundtrack one day in Earth elapses. So,
+
+1.25 sec in Miller = 86400 sec in Earth
+
+ratio = 86400 sec / 1.25 sec 
+
+Let me know if you find something wrong with this.
+*/
 var ratio = 69120.0;
 var music = false;
 
