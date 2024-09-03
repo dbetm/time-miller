@@ -8,7 +8,7 @@ var translations = {
     "es": {
         "title": "Planeta Miller",
         "header": {
-            "title": "⏳ INTERESTELAR",
+            "title": "⏳ INTERESTELAR 🌽",
         },
         "time": {
             "preText": "Han pasado aproximadamente",
@@ -32,7 +32,7 @@ var translations = {
     "en": {
         "title": "Miller's Planet",
         "header": {
-            "title": "⏳ INTERSTELLAR",
+            "title": "⏳ INTERSTELLAR 🌽",
         },
         "time": {
             "preText": "It has been around",
