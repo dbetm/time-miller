@@ -18,7 +18,6 @@ function renderTime() {
 
     let diff = now.diff(premiere, 'seconds');
 
-    let earth_seconds = diff.seconds;
     let miller_seconds = diff.seconds / ratio;
 
     let days = parseInt(miller_seconds / 86400);
@@ -64,7 +63,7 @@ function playSoundtrack() {
     else soundtrack.pause();
 }
 
-function renderRandomPhrase() {
+function renderRandomQuote() {
     let randomIndex = Math.floor(Math.random() * quotes[language].length);
 
     document.getElementById('phrase').innerHTML = quotes[language][randomIndex].body;

@@ -38,8 +38,9 @@
             </div>
         </section>
         <section id="btnSnapshot" class="py-2 text-center">
-            <input id="btnGenSnapshot" class="btn btn-dark" onclick="takeSnapshot();" type="button" value="Generar captura">
+            <input id="btnGenSnapshot" class="btn btn-dark" onclick="takeSnapshot();" type="button" value="Screenshot">
             <input id="btnPlayMusic" class="btn btn-dark px-3" onclick="playSoundtrack();" type="button" value="Música">
+            <input id="btnShuffleQuote" class="btn btn-dark px-3" onclick="renderRandomQuote();" type="button" value="∞">
         </section>
         <section class="content text-light py-2 px-2 text-center">
             <div class="phrase">
@@ -80,13 +81,15 @@
 
         <script src="libs/html2canvas.min.js" charset="utf-8"></script>
         <!-- My app -->
+        <script src="js/utils.js" charset="utf-8"></script>
         <script src="js/app.js" charset="utf-8"></script>
         <script src="js/translation.js" charset="utf-8"></script>
         <script src="assets/quotes.json" charset="utf-8"></script>
         <script type="text/javascript">
             renderTextTranslated();
+            renderLangSwitcher();
             renderTime();
-            renderRandomPhrase();
+            renderRandomQuote();
         </script>
     </body>
 </html>
