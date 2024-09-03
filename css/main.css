@@ -19,6 +19,7 @@ body {
 #mainTitle {
     font-family: 'Bebas Neue', cursive;
     font-size: 3em;
+    background-color: #2a5f82 !important;
 }
 
 .content {
@@ -49,6 +50,10 @@ footer {
 
 footer p {
     margin-top: 15px;
+}
+
+footer a {
+    color: #2a5f82;;
 }
 
 #switchLang {

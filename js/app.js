@@ -82,6 +82,7 @@ function takeSnapshot() {
     document.body.style.width = '600px';
     document.body.style.height = '750px';
     document.getElementById('credits').hidden = false;
+    document.getElementById("mainTitle").style.backgroundColor = "#2a5f82";
 
     html2canvas(document.body, {
         width: 600,

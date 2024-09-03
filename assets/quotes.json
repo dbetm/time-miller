@@ -97,6 +97,10 @@ quotes = {
         {
             "author": "Professor Brand",
             "body": "I’m not afraid of death. I’m an old physicist. I’m afraid of time."
+        },
+        {
+            "author": "Dr. Amelia Brand",
+            "body": "We must confront the reality that nothing in our solar system can help us."
         }
     ]
 }
