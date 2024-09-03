@@ -2,7 +2,7 @@ const SPANISH = "es"
 const ENGLISH = "en"
 
 // The language by default is English
-var language = ENGLISH;
+var language = getLocalStorageItem("lang", ENGLISH);
 
 var translations = {
     "es": {
@@ -21,8 +21,8 @@ var translations = {
             }
         },
         "buttons": {
-            "capture": "Generar captura",
-            "playMusic": "Música"
+            "capture": "screenshot",
+            "playMusic": "música"
         },
         "footer": {
             "refMusic": "Música de fondo - First step",
@@ -45,8 +45,8 @@ var translations = {
             }
         },
         "buttons": {
-            "capture": "Generate screenshot",
-            "playMusic": "Play music"
+            "capture": "screenshot",
+            "playMusic": "music"
         },
         "footer": {
             "refMusic": "Background music - First step",
@@ -60,9 +60,17 @@ function switchLang() {
     if(language == ENGLISH) language = SPANISH;
     else language = ENGLISH;
 
+    localStorage.setItem("lang", language);
+
     renderTextTranslated();
     renderTime();
-    renderRandomPhrase();
+    renderRandomQuote();
+}
+
+function renderLangSwitcher() {
+    if(language == SPANISH) {
+        document.getElementById("switchLang").checked = true;
+    }
 }
 
 
