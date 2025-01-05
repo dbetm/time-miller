@@ -7,7 +7,7 @@ The time happens more slowly (compared to the Earth) in the fictional planet bec
 
 **Features**
 - Compute and display the time that has happened in Miller's planet since the premiered of the movie (in Earth) in days, minutes and seconds.
-- Compute the earth-days left for Miller to have had watch the movie.
+- Compute the earth-days left for Miller to have had watch the movie. Idea by Conor - @ _HanTyumi.
 - Generate screenshot with a random quote from the movie.
 - Play the main soundtrack of the movie.
 - Content displayed in English (default) and Spanish.
