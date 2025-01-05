@@ -1,4 +1,6 @@
 var premiere = luxon.DateTime.local(2014, 10, 26, 0, 0);
+const INTERSTELLAR_DURATION_SECS = 10140; // 2h 49 minutes
+
 /* 1.25 seconds in Miller is equal to 1 day in Earth, because for each tic-tac that happens 
 in the soundtrack one day in Earth elapses. So,
 
@@ -8,24 +10,24 @@ ratio = 86400 sec / 1.25 sec
 
 Let me know if you find something wrong with this.
 */
-var ratio = 69120.0;
+
+const RATIO = 69120.0;
 var music = false;
 
+// for each 69120000 ms passed the page need to be refreshed to increase a second the time passed
 var interval = setInterval(renderTime, 69120000);
 
 function renderTime() {
     let now = luxon.DateTime.local();
-
     let diff = now.diff(premiere, 'seconds');
+    let millerSeconds = diff.seconds / RATIO;
 
-    let miller_seconds = diff.seconds / ratio;
-
-    let days = parseInt(miller_seconds / 86400);
-    miller_seconds = miller_seconds % 86400;
-    let hours = parseInt(miller_seconds / 3600);
-    miller_seconds = miller_seconds % 3600;
-    let minutes = parseInt(miller_seconds / 60);
-    let seconds = parseInt(miller_seconds % 60);
+    let days = parseInt(millerSeconds / 86400);
+    millerSeconds = millerSeconds % 86400;
+    let hours = parseInt(millerSeconds / 3600);
+    millerSeconds = millerSeconds % 3600;
+    let minutes = parseInt(millerSeconds / 60);
+    let seconds = parseInt(millerSeconds % 60);
 
     // console.log(miller_seconds / 60)
     // console.log(days, hours, minutes, seconds);
@@ -51,6 +53,20 @@ function renderTime() {
     }
 
     document.getElementById("time").innerHTML = timeStr;
+}
+
+function renderTimeLeftForMillerToWatchMovie() {
+    let now = luxon.DateTime.local();
+    let diff = now.diff(premiere, "seconds");
+    let millerSeconds = diff.seconds / RATIO;
+
+    let leftSecsInMillerTime = INTERSTELLAR_DURATION_SECS - millerSeconds;
+
+    let leftSecondsInEarthTime = leftSecsInMillerTime * RATIO;
+    let leftDaysInEarthTime = leftSecondsInEarthTime / 86400;
+    
+    let delta = leftDaysInEarthTime > 0.01 ? 1 : 0;
+    document.getElementById("remainingDaysToWatch").innerHTML = parseInt(leftDaysInEarthTime + delta);
 }
 
 function playSoundtrack() {

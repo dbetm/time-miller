@@ -18,12 +18,12 @@ body {
 
 #mainTitle {
     font-family: 'Bebas Neue', cursive;
-    font-size: 3em;
+    font-size: 2.9em;
     background-color: #2a5f82 !important;
 }
 
 .content {
-    margin: 20px auto;
+    margin: 10px auto;
     max-width: 90%;
     background-color: rgba(46, 46, 46, 0.58);
 }
@@ -35,7 +35,7 @@ body {
 
 .time {
     font-family: digital, serif;
-    font-size: 2.5em;
+    font-size: 2.3em;
 }
 
 .lead {
@@ -62,4 +62,8 @@ footer a {
 
 #lblSwitchLang {
     font-size: 1.1em
+}
+
+#timeToWatchInterstellar {
+    font-size: 0.7em;
 }
