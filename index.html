@@ -28,13 +28,18 @@
         </header>
         <section class="content text-light py-2 rounded">
             <div class="col-12 text-center">
-                <h2 id="preTextTime">Han pasado aproximadamente</h2>
+                <h3 id="preTextTime">Han pasado aproximadamente</h3>
             </div>
-            <div class="time my-3 text-center">
+            <div class="time my-2 text-center">
                 <p id="time">-- minutos</p>
             </div>
             <div class="col-12 text-center">
-                <h2 id="afterTextTime">en el planeta Miller desde el estreno de la película en 2014</h2>
+                <h3 id="afterTextTime">en el planeta Miller desde el estreno de la película en 2014</h3>
+            </div>
+            <div class="col-12 text-center">
+                <h6 id="timeToWatchInterstellar">
+                    faltan <span id="remainingDaysToWatch">X</span> días para que Miller haya tenido tiempo suficiente para mirar la película
+                </h6>
             </div>
         </section>
         <section id="btnSnapshot" class="py-2 text-center">
@@ -89,6 +94,7 @@
             renderTextTranslated();
             renderLangSwitcher();
             renderTime();
+            renderTimeLeftForMillerToWatchMovie();
             renderRandomQuote();
         </script>
     </body>

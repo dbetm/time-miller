@@ -7,6 +7,7 @@ El tiempo transcurre más lento (respecto a la Tierra) en aquel planeta ficticio
 
 **Funcionalidades**
 - Calcular y mostrar el tiempo que ha pasado en Miller desde el estreno de la película (en la Tierra) en días, horas, minutos y segundos.
+- Calcule los días terrestres que le faltaban a Miller para ver la película completa.
 - Descargar imagen como captura con frase random de la película.
 - Tocar reloj para escuchar el tema música principal de la película.
 

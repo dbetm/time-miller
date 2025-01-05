@@ -18,14 +18,15 @@ var translations = {
                 "hour": "hora",
                 "minute": "minuto",
                 "second": "segundo"
-            }
+            },
+            "timeToWatchMovie": 'faltan <span id="remainingDaysToWatch">X</span> días para que Miller haya tenido tiempo suficiente para mirar la película'
         },
         "buttons": {
             "capture": "screenshot",
             "playMusic": "música"
         },
         "footer": {
-            "refMusic": "Música de fondo - First step",
+            "refMusic": "Música: First step",
             "refContribute": "Contribuye en GitHub +)"
         }
     },
@@ -42,14 +43,15 @@ var translations = {
                 "hour": "hour",
                 "minute": "minute",
                 "second": "second"
-            }
+            },
+            "timeToWatchMovie": '<span id="remainingDaysToWatch">X</span> earth-days left for Miller to have had enough time to watch it'
         },
         "buttons": {
             "capture": "screenshot",
             "playMusic": "music"
         },
         "footer": {
-            "refMusic": "Background music - First step",
+            "refMusic": "Music: First step",
             "refContribute": "Contribute on GitHub +)"
         }
     }
@@ -92,6 +94,11 @@ function renderTextTranslated() {
     document.getElementById("preTextTime").innerHTML = dataByLang["time"]["preText"];
     // post text after the time passed
     document.getElementById("afterTextTime").innerHTML = dataByLang["time"]["afterText"];
+    // days left for Miller to watch Interstellar
+    document.getElementById("timeToWatchInterstellar").innerHTML = (
+        dataByLang["time"]["timeToWatchMovie"]
+    );
+    renderTimeLeftForMillerToWatchMovie();
 
     /* CONTROL BUTTONS */
     // set button values
